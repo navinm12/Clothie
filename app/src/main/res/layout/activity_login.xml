@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="50dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    tools:context=".Login">
+
+    <EditText
+        android:inputType="textEmailAddress"
+        android:id="@+id/edit_email"
+        android:hint="@string/email_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:inputType="textPassword"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/edit_email"
+        android:id="@+id/edit_password"
+        android:hint="@string/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:textSize="14sp"
+        android:textAlignment="textEnd"
+        android:text="@string/not_a_member_yet_sign_up"
+        android:layout_marginTop="17dp"
+        android:layout_below="@+id/edit_password"
+        android:id="@+id/register_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end" />
+
+    <Button
+        android:layout_marginTop="17dp"
+        android:layout_below="@+id/register_label"
+        android:padding="18dp"
+        android:id="@+id/login"
+        android:text="@string/login"
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/or_label"
+        android:text="OR"
+        android:textAlignment="center"
+        android:layout_below="@+id/login"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.google.android.gms.common.SignInButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sign_in_button"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/or_label">
+
+    </com.google.android.gms.common.SignInButton>
+
+
+</RelativeLayout>

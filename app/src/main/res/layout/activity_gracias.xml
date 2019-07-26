@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Gracias">
+
+    <ImageView
+        android:id="@+id/tank_thumb"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/thank"/>
+    <TextView
+    android:layout_below="@+id/tank_thumb"
+    android:textSize="18sp"
+        android:textColor="@color/grey"
+    android:text="Thanks For Shopping. COME BACK AGAIN"
+    android:textAlignment="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+    <Button
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/white"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:id="@+id/con"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:layout_centerVertical="true"
+        android:text="CONTINUE SHOPPING"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddProduct">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/pid"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PRODUCT ID"
+                android:textSize="15sp"/>
+
+            <EditText
+                android:id="@+id/proname"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Product name"
+
+                />
+
+            <EditText
+
+                android:id="@+id/descriptionEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/proname"
+                android:hint="Description"
+                android:inputType="textMultiLine"
+                android:maxLines="6"
+                android:minLines="3" />
+            <EditText
+                android:id="@+id/price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Product Price"
+                android:inputType="number"
+                android:layout_below="@id/descriptionEditText"
+                />
+            <Spinner
+                android:layout_marginTop="20dp"
+                android:id="@+id/procat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/price"/>
+
+            <EditText
+                android:layout_marginTop="20dp"
+                android:id="@+id/dis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/procat"
+                android:hint="Discount" />
+
+
+
+
+
+
+
+
+
+            <Button
+                android:id="@+id/add_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dis"
+                android:layout_marginTop="20dp"
+                android:text="Add Photos"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="100dp"/>
+
+
+            <ImageView
+                android:src="@mipmap/ic_launcher"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/add_image"
+                android:id="@+id/preview_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="150dp"/>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/addproduct_"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorAccent"
+        android:text="SUBMIT"
+        android:textColor="@color/white"
+        android:textSize="17dp" />
+
+
+</RelativeLayout>

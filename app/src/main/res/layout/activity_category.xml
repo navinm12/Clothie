@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Category">
+
+    <TextView
+        android:textAlignment="center"
+        android:text="CATEGORIES"
+        android:layout_marginTop="215dp"
+        android:id="@+id/category_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        tools:ignore="RtlSymmetry" />
+    <LinearLayout
+        android:layout_below="@+id/category_label"
+        android:id="@+id/layout02"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        tools:ignore="UselessParent">
+        <android.support.v7.widget.CardView
+            android:padding="10dp"
+            android:id="@+id/cat1_f"
+            android:background="@android:color/transparent"
+            android:layout_width="120dp"
+            android:layout_height="120dp">
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/topwear"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/buyer_thumb" />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cat2_f"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:background="@android:color/transparent"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="25dp">
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/bottomwear"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/buyer_thumb"/>
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/layout02"
+        android:id="@+id/layout03"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        tools:ignore="UselessParent">
+        <android.support.v7.widget.CardView
+            android:background="@android:color/transparent"
+            android:padding="10dp"
+            android:id="@+id/cat3_f"
+            android:layout_width="120dp"
+            android:layout_height="120dp">
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/accessories"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/buyer_thumb" />
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:background="@android:color/transparent"
+            android:id="@+id/cat4_f"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="25dp"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="25dp">
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/footwear"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:contentDescription="@string/buyer_thumb"/>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+</RelativeLayout>
